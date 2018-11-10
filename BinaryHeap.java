@@ -45,7 +45,8 @@ public class BinaryHeap {
     public void shiftdown(int parent){
 
         int child = (parent * 2)+1;
-        if(child > size || arr[parent] < arr[child]){
+
+        if(child > size){
             return;
         }
 
